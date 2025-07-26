@@ -1,7 +1,16 @@
-function showSection(sectionId) {
+function showSection(section) {
+
   const sections = document.querySelectorAll('.section');
-  sections.forEach(section => {
-    section.classList.add('hidden');
+  sections.forEach(s => {
+    s.classList.remove('active');
   });
-  document.getElementById(sectionId).classList.remove('hidden');
+
+  const activeSection = document.getElementById(`section-${section}`);
+  if (activeSection) {
+    activeSection.classList.add('active');
+  }
 }
+
+window.onload = function() {
+  showSection('home');
+};
