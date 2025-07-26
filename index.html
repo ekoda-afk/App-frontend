@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telegram Mini App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <section id="home" class="section">Home Section - User Info</section>
+    <section id="balance" class="section hidden">Balance Section - Your Points</section>
+    <section id="earn" class="section hidden">Earn Section - Tasks</section>
+    <section id="referral" class="section hidden">Referral Section - Your Link</section>
+
+    <nav class="nav-bar">
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('balance')">Balance</button>
+      <button onclick="showSection('earn')">Earn</button>
+      <button onclick="showSection('referral')">Referral</button>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
